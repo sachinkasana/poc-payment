@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var orderDetails={orderId:11}
+        var transactionStatus={status:'success'}
+        window.onload = function(){
+            var transactionStatus = document.getElementById("transactionStatus").value;
+            var orderDetails = document.getElementById("orderDetails").value;
+            var finalJson = {"transactionStatus": transactionStatus, "orderDetails":orderDetails};
+            console.log("finalJson:: " + JSON.stringify(finalJson));
+            var fetchOS = navigator.userAgent;
+            if(fetchOS.toLowerCase().indexOf("windows") >= 0) {     
+            //For Windows (Lumia 550-930)
+            //window.WindowsPayment.getPaymentResponse(JSON.stringify(finalJson));
+                  window.external.notify(JSON.stringify(finalJson));
+            }
+            else if(fetchOS.toLowerCase().indexOf("android") >= 0){
+            //For Android Specific Devices
+                  app.makeToast(JSON.stringify(finalJson));
+            }
+            else{
+            //For IOS- Function needs to be modified
+                  //app.makeToast(JSON.stringify(finalJson));
+                setTimeout(function() { app.makeToast(JSON.stringify(finalJson)) }, 1);
+            } 
+        }
+        
+        </script>
+</head>
+<body>
+    <div>hello</div>
+    <div>
+        <input id="orderDetails" type="hidden" value="{orderDetails}">
+	<input id="transactionStatus" type="hidden" value="{transactionStatus.status}">
+    </div>
+	
+</body>
+</html>
