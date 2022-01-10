@@ -411,9 +411,9 @@
 }
         var transactionStatus={status:'success'}
         window.onload = function(){
-            var transactionStatus = document.getElementById("transactionStatus").value;
-            var orderDetails = document.getElementById("orderDetails").value;
-            var finalJson = {"transactionStatus": transactionStatus, "orderDetails":orderDetails};
+           // var transactionStatus = document.getElementById("transactionStatus").value;
+            //var orderDetails = document.getElementById("orderDetails").value;
+            var finalJson = {"transactionStatus": transactionStatus.status, "orderDetails":orderDetails};
             console.log("finalJson:: " + JSON.stringify(finalJson));
             var fetchOS = navigator.userAgent;
             if(fetchOS.toLowerCase().indexOf("windows") >= 0) {     
@@ -437,8 +437,8 @@
 <body>
     <div>hello</div>
     <div>
-        <input id="orderDetails" type="hidden" value="{orderDetails}">
-	<input id="transactionStatus" type="hidden" value="{transactionStatus.status}">
+        <input id="orderDetails" type="hidden" value="orderDetails">
+	<input id="transactionStatus" type="hidden" value="transactionStatus.status">
     </div>
 	
 </body>
