@@ -6,7 +6,409 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript">
-        var orderDetails={orderId:11}
+        var orderDetails={
+    "type": "orderWsDTO",
+    "allCartsTotalQty": 1,
+    "appliedOrderPromotions": [],
+    "appliedProductPromotions": [],
+    "availableActions": [
+        {
+            "key": "REORDER",
+            "value": false
+        },
+        {
+            "key": "VIEW_INVOICE",
+            "value": false
+        }
+    ],
+    "calculatedPrices": [
+        {
+            "key": "TOTAL_MRP",
+            "value": {
+                "formattedValue": "₹ 899.00",
+                "value": 899.0
+            }
+        },
+        {
+            "key": "TOTAL_DIST_DISC",
+            "value": {
+                "formattedValue": "₹ 31.70",
+                "value": 31.700000000000045
+            }
+        },
+        {
+            "key": "TOTAL_DAP_DISC",
+            "value": {
+                "formattedValue": "₹ 0.00",
+                "value": 0.0
+            }
+        },
+        {
+            "key": "TOTAL_COUPON_DISC",
+            "value": {
+                "formattedValue": "₹ 0.00",
+                "value": 0.0
+            }
+        },
+        {
+            "key": "TOTAL_PROMO_DISC",
+            "value": {
+                "formattedValue": "₹ 0.00",
+                "value": 0.0
+            }
+        },
+        {
+            "key": "TOTAL_SAV",
+            "value": {
+                "formattedValue": "₹ 82.00",
+                "value": 82.00000000000004
+            }
+        }
+    ],
+    "code": "703808874",
+    "deliveryData": {
+        "deliveryAddress": {
+            "country": {
+                "isocode": "IN",
+                "name": "India"
+            },
+            "defaultAddress": false,
+            "id": "8922807599127",
+            "line1": "test",
+            "line2": "",
+            "lynxMdmsId": "7b29a110f9fa4f05932eca4dcbf3d8",
+            "phone": "8142098455",
+            "postalCode": "847109",
+            "recipientName": "Test",
+            "region": {
+                "isocode": "BHR"
+            },
+            "town": "Madhubani"
+        },
+        "deliveryMode": {
+            "code": "standard",
+            "deliveryCost": {
+                "currencyIso": "INR",
+                "formattedValue": "₹ 0.00",
+                "priceType": "BUY",
+                "value": 0.0
+            },
+            "description": "Standard delivery mode",
+            "estimatedDeliveryDate": "2022-01-21T05:59:23+0000",
+            "faceToFace": false,
+            "freeDelivery": false,
+            "name": "Standard",
+            "pickup": false,
+            "unshippable": false,
+            "valueAddedServices": [
+                {
+                    "code": "548"
+                }
+            ]
+        },
+        "deliveryTax": {
+            "currencyIso": "INR",
+            "formattedValue": "₹ 0.00",
+            "priceType": "BUY",
+            "value": 0.0
+        },
+        "deliveryTaxValues": [
+            {
+                "absolute": false,
+                "appliedValue": 0.0,
+                "code": "IN_CGST",
+                "currencyIsoCode": "INR",
+                "value": 9.0
+            },
+            {
+                "absolute": false,
+                "appliedValue": 0.0,
+                "code": "IN_SGST",
+                "currencyIsoCode": "INR",
+                "value": 9.0
+            }
+        ]
+    },
+    "discountedDeliveryCost": {
+        "currencyIso": "INR",
+        "formattedValue": "₹ 50.00",
+        "priceType": "BUY",
+        "value": 50.0
+    },
+    "dropCode": "847109",
+    "entries": [
+        {
+            "aboBasePrice": 0.0,
+            "bundleNo": "0",
+            "businessVolume": 660.0,
+            "calculatedPrices": [
+                {
+                    "key": "DAP_COUPON_DISC",
+                    "value": {
+                        "formattedValue": "₹ 0.00",
+                        "value": 0.0
+                    }
+                },
+                {
+                    "key": "DAP",
+                    "value": {
+                        "formattedValue": "₹ 867.30",
+                        "value": 867.3
+                    }
+                },
+                {
+                    "key": "DAP_DISC",
+                    "value": {
+                        "formattedValue": "₹ 0.00",
+                        "value": 0.0
+                    }
+                },
+                {
+                    "key": "MRP",
+                    "value": {
+                        "formattedValue": "₹ 899.00",
+                        "value": 899.0
+                    }
+                }
+            ],
+            "entryNumber": 0,
+            "giveAway": false,
+            "isRoc": false,
+            "isWarranty": false,
+            "pointValue": 8.25,
+            "price": {
+                "currencyIso": "INR",
+                "formattedValue": "₹ 735.00",
+                "priceType": "BUY",
+                "value": 735.0
+            },
+            "proRatedPrice": 0.0,
+            "product": {
+                "PVPoints": 0.0,
+                "amwayLabels": [
+                    {
+                        "backgroundColor": "PURPLE",
+                        "name": "Gift with Purchase",
+                        "priority": 3,
+                        "type": "GIFT_WITH_PURCHASE"
+                    }
+                ],
+                "amwaySize": "120N (Tablets)",
+                "availableForPickup": false,
+                "baseOptions": [],
+                "brand": "NW",
+                "code": "271552ID",
+                "dangerous": false,
+                "futureStockEnabled": false,
+                "isAbo": false,
+                "isBundle": false,
+                "isPreBookAvailable": false,
+                "isPreOrderServiceProduct": false,
+                "isSubscriptionSupported": false,
+                "minStockThresholdFlag": false,
+                "name": "NUTRILITE® Natural C",
+                "potentialPromotions": [
+                    {
+                        "code": "PRM200024",
+                        "couldFireMessages": [],
+                        "description": "Buy Amway products worth Rs.2458 Buyer price (Except Durables,SA8-1.33l,LOC-1.33l,DD-1.33l )& get discount Rs.339",
+                        "endDate": "2022-12-31T07:35:23+0000",
+                        "firedMessages": [],
+                        "name": "Buy Amway products worth Rs.2458 Buyer price (Except Durables,SA8-1.33l,LOC-1.33l,DD-1.33l )& get discount Rs.339",
+                        "priority": 500,
+                        "promotionType": "Rule Based Promotion"
+                    }
+                ],
+                "purchasable": true,
+                "quantityMultiplier": 1,
+                "stock": {
+                    "isValueRounded": false,
+                    "stockLevel": 500,
+                    "stockLevelStatus": "inStock"
+                },
+                "type": "SINGLE",
+                "url": "/nutrilite-natural-c/p/271552ID"
+            },
+            "quantity": 1,
+            "removeable": true,
+            "retailBasePrice": 0.0,
+            "returnableQty": 0,
+            "sample": false,
+            "shippable": true,
+            "totalPriceAfterDiscount": {
+                "currencyIso": "INR",
+                "formattedValue": "₹ 867.30",
+                "priceType": "BUY",
+                "value": 867.3
+            }
+        }
+    ],
+    "goodsMovementType": "INTRASTATE",
+    "grandTotalPrice": {
+        "amwayValue": {
+            "businessVolume": 660.0,
+            "businessVolumePerItem": 0.0,
+            "formattedPointValue": "8.25",
+            "formattedPointValuePerItem": "",
+            "pointValue": 8.25,
+            "pointValuePerItem": 0.0,
+            "volumeabo": 0.0
+        },
+        "currencyIso": "INR",
+        "formattedValue": "₹ 867.30",
+        "priceType": "BUY",
+        "value": 867.3
+    },
+    "grandTotalPriceWithTax": {
+        "currencyIso": "INR",
+        "formattedValue": "₹ 867.30",
+        "priceType": "BUY",
+        "value": 867.3
+    },
+    "indOrderRoundingItem": {
+        "code": "ORDER_ROUNDING_CODE",
+        "value": {
+            "currencyIso": "INR",
+            "formattedValue": "- ₹ 0.30",
+            "priceType": "BUY",
+            "value": -0.3
+        }
+    },
+    "isRetryAvailable": false,
+    "loyaltyPoints": 7.35,
+    "orderCreatedBy": "Self",
+    "orderedBy": {
+        "customerID": "107492014",
+        "name": "anurag bajpai",
+        "firstName": "anurag",
+        "lastName": "bajpai",
+        "accountNumber": "7005028397",
+        "customerType": "AmwayBusinessNature_4"
+    },
+    "paymentMode": {
+        "active": false,
+        "allowOverpay": false,
+        "amount": 0.0,
+        "code": "CREDIT_DEBIT_CARD",
+        "disableArBalanceFlag": false,
+        "isDefault": false,
+        "name": "Debit/Credit/Net banking/UPI/Wallet",
+        "repeatableCount": 0,
+        "usedCount": 0
+    },
+    "paymentTotal": {
+        "currencyIso": "INR",
+        "formattedValue": "₹ 867.00",
+        "priceType": "BUY",
+        "value": 867.0
+    },
+    "preOrder": false,
+    "preOrderRedeem": false,
+    "subCarts": [],
+    "subTotal": {
+        "currencyIso": "INR",
+        "formattedValue": "₹ 735.00",
+        "priceType": "BUY",
+        "value": 735.0
+    },
+    "totalPrice": {
+        "currencyIso": "INR",
+        "formattedValue": "₹ 735.00",
+        "priceType": "BUY",
+        "value": 735.0
+    },
+    "totalPriceWithTax": {
+        "currencyIso": "INR",
+        "formattedValue": "₹ 867.30",
+        "priceType": "BUY",
+        "value": 867.3
+    },
+    "totalWeight": 0.0,
+    "allowCoupons": false,
+    "allowPromotions": false,
+    "bonusDiscounts": [
+        {
+            "consumedEntries": [
+                {
+                    "adjustedUnitPrice": 735.0,
+                    "code": "123456789",
+                    "orderEntryNumber": 0,
+                    "priceAdjustment": {
+                        "amwayValue": {
+                            "businessVolume": -2.0,
+                            "formattedPointValue": "-4.00",
+                            "pointValue": -4.0,
+                            "volumeabo": 0.0
+                        },
+                        "value": 0.0
+                    },
+                    "quantity": 1
+                }
+            ],
+            "type": "member_plus"
+        }
+    ],
+    "combinedOrder": false,
+    "consignments": [
+        {
+            "carrier": "176",
+            "code": "703808874_c0",
+            "invoiceNumber": "60004TG213600527",
+            "invoiceUrl": "/downloadInvoices/invoice/60004TG213600527.pdf",
+            "shipmentType": "N",
+            "status": "READY"
+        }
+    ],
+    "created": "2022-01-10T05:58:50+0000",
+    "damageGoods": false,
+    "firstOrder": false,
+    "freeShipment": false,
+    "giftCoupons": [],
+    "internal": false,
+    "invoiceRequired": false,
+    "nonDeductibleVat": false,
+    "paymentTransactions": [
+        {
+            "code": "703808874_0",
+            "currency": "INR",
+            "entries": [
+                {
+                    "amount": 867.0,
+                    "bankName": "WALLET",
+                    "canCancel": false,
+                    "canModify": false,
+                    "canRemove": false,
+                    "code": "703808874_0_0",
+                    "currency": "INR",
+                    "date": "2022-01-10T05:58:51+0000",
+                    "transactionCode": "163",
+                    "transactionId": "220110881003337545",
+                    "transactionStatus": "SUCCESS",
+                    "type": "CAPTURE",
+                    "webReferenceNumber": "7038088740110112801"
+                }
+            ],
+            "paymentMode": "PAYTM_WALLET",
+            "paymentProvider": "PAYTM",
+            "plannedAmount": 867.0,
+            "requestId": "7038088740110112801",
+            "sequenceNumber": 1
+        }
+    ],
+    "personal": false,
+    "processBilling": false,
+    "processInventory": false,
+    "processingDamageGoods": false,
+    "processingGco": false,
+    "processingInventory": false,
+    "processingInvoice": false,
+    "processingPricing": false,
+    "processingPvbv": false,
+    "salesApplication": "Web",
+    "shippable": false,
+    "status": "PAYMENT_CAPTURED",
+    "transactionErrorMessage": ""
+}
         var transactionStatus={status:'success'}
         window.onload = function(){
             var transactionStatus = document.getElementById("transactionStatus").value;
